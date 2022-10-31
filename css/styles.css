@@ -79,7 +79,7 @@ img {
 
 .background-color {
     background-color: var(--color-primary);
-    border: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
 }
 
 .flex-header {
@@ -185,6 +185,10 @@ img {
     background-color: var(--color-section);
 }
 
+.header-otstyp {
+    padding: 200px 0;
+}
+
 .main-title {
     display: block;
     margin-top: 0;
@@ -286,7 +290,7 @@ img {
 }
 
 .section-title {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
@@ -345,8 +349,12 @@ img {
 }
 
 .adr {
-    display: inline-block;
+    display: block;
     margin-bottom: 9px;
+}
+
+.adr:nth-child(3n) {
+    margin-bottom: 0;
 }
 
 .addres {
@@ -372,7 +380,7 @@ img {
 .navport {
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .navport .list + .list {
