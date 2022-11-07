@@ -29,10 +29,10 @@
           >
           <ul class="site-nav limarge">
             <li class="list">
-              <a class="links-nav link current" href="./index.html">Студія</a>
+              <a class="links-nav link" href="./index.html">Студія</a>
             </li>
             <li class="list">
-              <a class="links-nav link" href="./portfolio.html">Портфоліо</a>
+              <a class="links-nav link current" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="list">
               <a class="links-nav link" href="#">Контакти</a>
@@ -42,13 +42,21 @@
         <ul class="contacts-nav limarg">
           <li class="list">
             <a class="link contacts" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+              >
+             <svg class="icons-heder" width="16" height="12">
+              <use href="./images/icons.svg.svg#icon-envelope-hover"></use>
+             </svg>
+             info@devstudio.com
+            </a>
           </li>
           <li class="list">
             <a class="link contacts" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+              >
+              <svg class="icons-heder" width="16" height="12">
+                <use href="./images/icons.svg.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -221,7 +229,8 @@
       </section>
     </main>
     <footer class="bg-color footer-pd">
-      <div class="container">
+      <div class="container footer-flex">
+        <div>
         <a class="footer-logo link-logo acsent-color link" href="/" lang="en"
           ><span class="logo">Web</span>Studio</a
         >
@@ -249,6 +258,65 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div>
+        <p class="abzacp"> приєднуйтесь 
+          </p>
+          <ul class="footer-soc list">
+            <li class="socials-item">
+              <a
+               class="footer-soc-link link"
+               href="https://instagram.com"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Instagram icon"
+               >
+               <svg class="icons-socials" width="20" height="20">
+                <use href="./images/icons.svg.svg#icon-instagram-2"></use>
+               </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+               class="footer-soc-link link"
+               href="https://Twitter.com"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Twitter icon"
+               >
+                <svg class="icons-socials" width="20" height="20">
+                  <use href="./images/icons.svg.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li> 
+            <li class="socials-item">
+              <a
+               class="footer-soc-link link"
+               href="https://Facebook.com"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Facebook icon"
+               >
+           <svg class="icons-socials" width="20" height="20">
+            <use href="./images/icons.svg.svg#icon-facebook-1"></use>
+           </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+               class="footer-soc-link link"
+               href="https://Linkedin.com"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Linkedin icon"
+               >
+           <svg class="icons-socials" width="20" height="20">
+            <use href="./images/icons.svg.svg#icon-linkedin-1"></use>
+           </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
