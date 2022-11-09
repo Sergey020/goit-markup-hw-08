@@ -277,6 +277,8 @@ img {
     height: 120px;
     border-radius: 4px;
     background-color: var(--color-fon);
+    margin-bottom: 30px;
+    
 }
 
 .hidden-flex {
@@ -285,10 +287,6 @@ img {
 
 .hidden-list{
     width: 270px;
-}
-
-.hidden-flex .hidden-list+ .hidden-list {
-    margin-left: 30px;
 }
 
 .li-title {
@@ -540,12 +538,14 @@ color: var(--color-primary);
     margin-right: 30px;
     margin-bottom: 30px;
 }
-.flex-element:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
-}
 .flex-element:nth-child(3n) {
     margin-right: 0;
+}
+
+.hover-cards:hover {
+    display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .flex-element:nth-last-child(-n+3) {
