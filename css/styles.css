@@ -266,7 +266,6 @@ img {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 30px;
 }
 
 .hidden-item{
@@ -406,7 +405,6 @@ img {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 30px;
 }
 
 .title-li{
