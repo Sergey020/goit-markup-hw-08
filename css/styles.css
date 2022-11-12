@@ -5,6 +5,7 @@
     --color-content: #757575;
     --color-active: #2196F3;
     --color-fon: #f5f4fa;
+    --anim-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -132,10 +133,54 @@ img {
 
 .links-nav {
     font-weight: 500;
+    position: relative;
     line-height: 1.14;
     font-size: 14px;
     letter-spacing: 0.02em;
     color: var(--color-text);
+    transition: color var(--anim-fast);
+}
+
+.links-nav::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+
+    transform: translateX(-50%) scale(0.3);
+
+    display: block;
+    width: 110%;
+    height: 4px;
+    
+    border-radius: 2px;
+
+    background-color: var(--color-active);
+    opacity: 0;
+    transition: tranform var(--anim-fast), opacity var(--anim-fast);
+}
+
+.links-nav:hover::after,
+.title-link:focus::after {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+}
+
+.activ-line::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+
+    transform: translateX(-50%);
+
+    display: block;
+    width: 110%;
+    height: 4px;
+    
+    border-radius: 2px;
+
+    background-color: var(--color-active);
 }
 
 .links-nav:focus {
@@ -162,6 +207,7 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--color-content);
+    transition: color var(--anim-fast);
 }
 
 .contacts:focus {
@@ -238,6 +284,7 @@ img {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: box-shadow var(--anim-fast);
 }
 
 .button:hover {
@@ -413,6 +460,7 @@ img {
     border-radius: 50%;
     background-color: var(--color-primary);
     color: #AFB1B8;
+    transition: color var(--anim-fast), background-color var(--anim-fast);
 }
 
 .socials-link:hover {
@@ -446,6 +494,7 @@ img {
     color: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    transition: color var(--anim-fast),border var(--anim-fast);
 }
 
 .title-link:hover {
@@ -488,6 +537,7 @@ img {
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
+    transition: color var(--anim-fast); 
 }
 
 .acsent-color {
@@ -526,6 +576,7 @@ color: var(--color-primary);
     border-radius: 50%;
     background-color:rgba(255, 255, 255, 0.1);
     color: var(--color-primary);
+    transition: background-color var(--anim-fast), color var(--anim-fast);
 }
 
 .footer-soc-link:hover {
@@ -563,6 +614,11 @@ color: var(--color-primary);
 
 .flex-element:nth-child(3n) {
     margin-right: 0;
+}
+
+.hover-cards {
+    display: block;
+    transition: box-shadow var(--anim-fast);
 }
 
 .hover-cards:hover {
@@ -615,6 +671,7 @@ color: var(--color-primary);
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color var(--anim-fast), color var(--anim-fast), box-shadow var(--anim-fast);
 }
 
 .buttons:focus {
@@ -631,5 +688,4 @@ color: var(--color-primary);
 
 .buttons:active {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    ;
 }
