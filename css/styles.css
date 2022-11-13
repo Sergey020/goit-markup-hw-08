@@ -379,13 +379,14 @@ img {
     position: relative;
 }
 
-.overlay {
+.overlay {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding-top: 27px;
-  padding-bottom: 27px;
-
+  height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
@@ -393,7 +394,7 @@ img {
     font-style: normal;
     font-weight: 700;
     line-height: 16px;
-    text-align: center;
+    
     text-transform: uppercase;
     
     color: var(--color-primary);
@@ -688,4 +689,90 @@ color: var(--color-primary);
 
 .buttons:active {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.overlay-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-port {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+
+    width: 100%;
+    height: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    display: flex;
+    align-items: center;
+
+    background: rgba(33, 150, 243, 0.9);
+
+    transition: transform var(--anim-fast);
+}
+
+.overlay-port-text {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-primary);
+    user-select: none;
+}
+
+.hover-cards:hover .overlay-port {
+    transform: translateY(0);
+}
+/*Modal window*/
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity var(--anim-fast), visibility var(--anim-fast);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 528px;
+    min-height: 581px;
+    background-color: var(--color-primary);
+    transition: opacity var(--anim-fast), transform var(--anim-fast);
+}
+
+.backdrop.is-hidden .modal {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0.5);
+}
+
+.modal-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
