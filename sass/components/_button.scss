@@ -1,0 +1,27 @@
+.button {
+    display: block;
+    padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: var(--color-primary);
+    background-color: var(--color-active);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow var(--anim-fast);
+
+    &:hover {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    
+    &:active {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    }
+}
+
