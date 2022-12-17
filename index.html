@@ -60,6 +60,15 @@
             </a>
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="40" height="40">
+            <use href="./images/icons.svg.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--section 1-->
@@ -134,7 +143,11 @@
           <ul class="activities__list limarg">
             <li class="activities__item list">
               <img
-                src="./images/img1.jpg"
+              srcset="
+              ./images/creation/img-1_lg@1x.jpg 1x,
+              ./images/creation/img-1_lg@2x.jpg 2x
+            "
+            src="./images/creation/img-1_lg@1x.jpg"
                 width="370"
                 height="294"
                 alt="Десктопні додатки"
@@ -145,7 +158,11 @@
             </li>
             <li class="activities__item list">
               <img
-                src="./images/img2.jpg"
+              srcset="
+              ./images/creation/img-2_lg@1x.jpg 1x,
+              ./images/creation/img-2_lg@2x.jpg 2x
+            "
+            src="./images/creation/img-2_lg@1x.jpg"
                 width="370"
                 height="294"
                 alt="Мобільні додатки"
@@ -156,7 +173,11 @@
             </li>
             <li class="activities__item list">
               <img
-                src="./images/img3.jpg"
+              srcset="
+              ./images/creation/img-3_lg@1x.jpg 1x,
+              ./images/creation/img-3_lg@2x.jpg 2x
+            "
+            src="./images/creation/img-3_lg@1x.jpg"
                 width="370"
                 height="294"
                 alt="Дизайнерські рішення"
@@ -175,10 +196,20 @@
           <ul class="ul-flex list limarg">
             <li class="li-fon lili-flex">
               <img
-                src="./images/img-igor.jpg"
-                width="270"
-                height="260"
+                srcset="
+                  ./images/team/img-1_sm@1x.jpg 450w,
+                  ./images/team/img-1_sm@2x.jpg 900w,
+                  ./images/team/img-1_md@1x.jpg 354w,
+                  ./images/team/img-1_md@2x.jpg 708w,
+                  ./images/team/img-1_lg@1x.jpg 270w,
+                  ./images/team/img-1_lg@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img-1_sm@1x.jpg"
+                width="450px"
+                height="460px"
                 alt="Фото Ігоря Дем'яненко"
+                loading="lazy"
               />
               <div class="text-pd">
                 <h3 class="text-title">Ігор Дем'яненко</h3>
@@ -247,10 +278,20 @@
             </li>
             <li class="lili-flex li-fon">
               <img
-                src="./images/img-olga.jpg"
-                width="270"
-                height="260"
+                srcset="
+                  ./images/team/img-2_sm@1x.jpg 450w,
+                  ./images/team/img-2_sm@2x.jpg 900w,
+                  ./images/team/img-2_md@1x.jpg 354w,
+                  ./images/team/img-2_md@2x.jpg 708w,
+                  ./images/team/img-2_lg@1x.jpg 270w,
+                  ./images/team/img-2_lg@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img-2_sm@1x.jpg"
+                width="450px"
+                height="460px"
                 alt="Фото Ольги Рєпіної"
+                loading="lazy"
               />
               <div class="text-pd">
                 <h3 class="text-title">Ольга Рєпіна</h3>
@@ -319,10 +360,20 @@
             </li>
             <li class="lili-flex li-fon">
               <img
-                src="./images/img-mikola.jpg"
-                width="270"
-                height="260"
+                srcset="
+                  ./images/team/img-3_sm@1x.jpg 450w,
+                  ./images/team/img-3_sm@2x.jpg 900w,
+                  ./images/team/img-3_md@1x.jpg 354w,
+                  ./images/team/img-3_md@2x.jpg 708w,
+                  ./images/team/img-3_lg@1x.jpg 270w,
+                  ./images/team/img-3_lg@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img-3_sm@1x.jpg"
+                width="450px"
+                height="460px"
                 alt="Фото Миколи Тарасова"
+                loading="lazy"
               />
               <div class="text-pd">
                 <h3 class="text-title">Микола Тарасов</h3>
@@ -391,10 +442,20 @@
             </li>
             <li class="lili-flex li-fon">
               <img
-                src="./images/img-mihailo.jpg"
-                width="270"
-                height="260"
+                srcset="
+                  ./images/team/img-4_sm@1x.jpg 450w,
+                  ./images/team/img-4_sm@2x.jpg 900w,
+                  ./images/team/img-4_md@1x.jpg 354w,
+                  ./images/team/img-4_md@2x.jpg 708w,
+                  ./images/team/img-4_lg@1x.jpg 270w,
+                  ./images/team/img-4_lg@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img-4_sm@1x.jpg"
+                width="450px"
+                height="460px"
                 alt="Фото Михайла Єрмакова"
+                loading="lazy"
               />
               <div class="text-pd">
                 <h3 class="text-title">Михайло Єрмаков</h3>
@@ -719,6 +780,91 @@
         </form>
       </div>
     </div>
+    <!--Mobile-menu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle-icon" width="40" height="40">
+          <use href="./images/icons.svg.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a
+            href="./index.html"
+            class="mobile-menu-link mobile-menu-link--current link"
+            >Студія</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="mobile-menu-link link">Портфоліо</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link link">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item">
+          <a
+            href="tel:+380961111111"
+            class="mobile-contacts-link mobile-contacts-link--size-color link"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contacts-item">
+          <a href="mailto:info@devstudio.com" class="mobile-contacts-link link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item">
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrent"
+            class="mobile-socials-link link"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobile-socials-item">
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrent"
+            class="mobile-socials-link link"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-socials-item">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrent"
+            class="mobile-socials-link link"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobile-socials-item">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrent"
+            class="mobile-socials-link link"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,16 +1,39 @@
 .footer-pd {
     padding-top: 60px;
     padding-bottom: 60px;
+
 }
 
 .footer-flex {
     display: flex;
-    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 60px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        gap: 60px;
+        justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+        gap: 0;
+        justify-content: left;
+        text-align: left;
+        align-items: baseline;
+    }
 }
 
 .footer-logo {
     display: inline-block;
     margin-bottom: 20px;
+
+    width: 154px;
+    color: var(--color-secondary);
+    
+    @media screen and (min-width: 1200px) {
+        width: 145px;
+    }
 }
 
 .adr {
@@ -42,7 +65,9 @@
 }
 
 .abzacm {
-    margin-left: 70px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
 }
 
 .abzacp {
@@ -78,22 +103,46 @@ color: var(--color-primary);
 }
 
 .abzac-margin {
-    margin-left: auto;
+    @media screen and (min-width: 768px) {
+        margin: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
 }
 
 .footer-input-button {
     display: flex;
-    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: inline;
+    }
+
+    @media screen and (min-width: 1200px) {
+        gap: 12px;
+    }
 }
 
 .footer-input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: transparent;
     color: var(--color-content);
     padding: 15px 16px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
 }
 
 .footer-button {

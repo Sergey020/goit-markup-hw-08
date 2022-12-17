@@ -6,13 +6,43 @@
 .bg-fon {
     max-width: 1600px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg_sm@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/bg_sm@2x.jpg'); 
+    }
+
+    @media screen and (min-width: 481px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/bg_md@1x.jpg');
+    
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/bg_md@2x.jpg'); 
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/bg_lg@1x.jpg');
+    
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/bg_lg@2x.jpg'); 
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 
 .header-otstyp {
-    padding: 200px 0;
+    padding: 118px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+    }
 }
 
 .main-title {
@@ -21,13 +51,19 @@
     margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
-    width: 696px;
+    width: 360px;
      
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     color: var(--color-primary);
     text-transform: uppercase;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        width: 696px;
+
+        font-size: 44px;
+    }
 }

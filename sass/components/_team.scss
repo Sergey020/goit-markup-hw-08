@@ -1,19 +1,32 @@
 .ul-flex {
     display: flex;
-}
-
-.ul-flex .lili-flex+ .lili-flex {
-    margin-left: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .section-fon {
     background-color: var(--color-fon);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .li-fon {
     background-color: var(--color-primary);
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 4);
+    }
 }
 
 .text-title {
